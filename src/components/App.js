@@ -11,9 +11,11 @@ function App() {
       <button id="click" onClick={handleclick}>
         Click
       </button>
-      <p id="para" hidden>
-        Hello, I've learnt to use the full-stack evaluation tool. This makes me
-        so happy
+      <p>
+        <p id="para" hidden>
+          Hello, I've learnt to use the full-stack evaluation tool. This makes
+          me so happy
+        </p>
       </p>
     </div>
   );
