@@ -2,13 +2,15 @@ import React, { Component, useState } from "react";
 import "./../styles/App.css";
 
 function App() {
-  function handleclick() {
-    var id = document.getElementById("para");
-    id.hidden = false;
-  }
   return (
     <div id="main">
-      <button id="click" onClick={handleclick}>
+      <button
+        id="click"
+        onClick={() => {
+          var id = document.getElementById("para");
+          id.hidden = false;
+        }}
+      >
         Click
       </button>
       <p>
