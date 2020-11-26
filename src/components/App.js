@@ -7,16 +7,14 @@ function App() {
       <button
         id="click"
         onClick={() => {
-          var id = document.getElementById("para");
-          id.hidden = false;
+          var para = document.createElement("P");
+          para.innerText =
+            "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy";
+          document.body.appendChild(para);
         }}
       >
         Click
       </button>
-      <p id="para">
-        Hello, I've learnt to use the full-stack evaluation tool. This makes me
-        so happy
-      </p>
     </div>
   );
 }
