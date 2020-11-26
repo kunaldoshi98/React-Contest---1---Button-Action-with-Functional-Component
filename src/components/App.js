@@ -7,11 +7,13 @@ function App() {
       <button
         id="click"
         onClick={() => {
-          var para = document.createElement("P");
+          let para = document.createElement("P");
           para.innerText =
             "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy";
           para.id = "para";
           document.body.appendChild(para);
+          let click = document.getElementById("click");
+          click.disabled = true;
         }}
       >
         Click
