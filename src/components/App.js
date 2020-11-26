@@ -8,16 +8,15 @@ function App() {
         id="click"
         onClick={() => {
           var id = document.getElementById("para");
-          id.hidden = false;
+          id.innerText(
+            "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"
+          );
         }}
       >
         Click
       </button>
       <p>
-        <p id="para" hidden>
-          Hello, I've learnt to use the full-stack evaluation tool. This makes
-          me so happy
-        </p>
+        <p id="para"></p>
       </p>
     </div>
   );
